@@ -1,0 +1,35 @@
+---
+layout: default
+---
+
+<section>
+<!-- <div class="grid-container"> -->
+    <div class="grid-container-text">
+    {{ content }}
+    </div>
+<!-- </div> -->
+</section>
+
+<section>
+<div class="grid-container">
+    {% assign posts = site.portfolio | sort: post.date | reverse %}
+    {% for post in posts %}
+    <div class="grid-container-text">
+        <!-- <ul class="myposts"> -->
+            <!-- <li><a href="{{ post.url }}">{{ post.title}}</a>
+            <span class="postDate">{{ post.date | date: "%b %-d, %Y" }}</span>
+            </li> -->
+            <h2>
+                <a href="{{ post.url }}">{{ post.title}}</a>
+            </h2>
+            <p style="font-size: smaller;">
+                Completed {{ post.date | date: "%b %-d, %Y" }}
+            </p>
+            <p>
+                {{ post.content | truncatewords: 20 }}
+            </p>
+        <!-- </ul> -->
+    </div>
+    {% endfor %}
+</div>
+</section>

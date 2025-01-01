@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jay Piamjariyakul</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Roboto+Serif&display=swap" rel="stylesheet"> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet"> -->
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Comic+Neue&display=swap" rel="stylesheet"> -->
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="{{ site.baseurl }}/assets/styles.css"> -->
+    <link rel="stylesheet" href="{{ site.url }}/assets/css/styles.css">
+    <link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Your awesome title" />
+  </head>
+
+  <body>
+    <header>
+      <div class="container">
+        <h1>
+          <a href="{{ site.url }}">
+            jay piamjariyakul
+          </a>
+        </h1>
+        <p>engineer - composer - singer - poet</p>
+      </div>
+    </header>
+
+    <!-------------------------------------------------------->
+    <!-- Generate nav from "navigation.yml" -->
+    <!-------------------------------------------------------->
+    <nav>
+      <!-- Burger menu shows iff mobile view - see "styles.scss". -->
+      <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
+      <ul id="menu">
+        {% for link in site.data.navigation %}
+        <li>
+          <a href="{{ link.url }}">{{ link.title }}</a>
+        </li>
+        {% endfor %}
+      </ul>
+    </nav>
+
+    <!-------------------------------------------------------->
+    <!-- Main site -->
+    <!-------------------------------------------------------->
+    <div class="container fade-in">
+    {{ content }}
+    </div>
+
+    <footer>
+      <div class="container">
+        <p>
+          &copy; 2024 Jay Piamjariyakul.<br />
+          Built with <a href="https://jekyllrb.com/">Jekyll</a> - source code available on <a href="https://github.com/jaypiamjariyakul/jaypiamjariyakul.github.io">GitHub</a>.
+        </p>
+      </div>
+    </footer>
+
+    <button class="go-top-btn" id="goTopBtn" title="Go to top"></button>
+    <script type="text/javascript" src="{{ site.url }}/assets/js/main.js"></script>
+    <script type="text/javascript" src="{{ site.url }}/assets/js/navbar.js"></script>
+    <script type="text/javascript" src="{{ site.url }}/assets/js/back_to_top_button.js"></script>
+    <script type="text/javascript" src="{{ site.url }}/assets/js/css_animation.js"></script>
+  </body>
+</html>

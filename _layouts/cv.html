@@ -1,0 +1,22 @@
+---
+layout: default
+---
+
+<section>
+<div class="grid-container">
+  <div class="grid-container-text">
+    {{ content }}
+  </div> <!--grid-container-text-->
+  <div class="grid-container-profile">
+    <img src="{{ site.url }}/assets/img/cv_bg.png" alt="Picture of me at work." class="profile-pic" />
+  </div> <!--grid-container-profile-->
+</div>
+</section>
+
+{% for post in site.cv %}
+<section>
+<div class="grid-container-text">
+  {{ post.content }}
+</div>
+</section>
+{% endfor %}

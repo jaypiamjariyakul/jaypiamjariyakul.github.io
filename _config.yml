@@ -1,0 +1,20 @@
+name: j piamjariyakul
+baseurl: ""
+url: ""
+
+# NOTE: to render new collections, kill the old session & run "bundle exec jekyll serve --force_polling"
+collections:
+  posts:
+    output: true
+    permalink: /:collection/:name
+  portfolio:
+    output: true
+    permalink: /:collection/:name
+  cv:
+    output: true
+    order:
+      - education.md
+      - work_experience.md
+      - technical_skillsets.md
+      - proficiencies.md
+      - footnotes.md
