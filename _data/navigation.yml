@@ -4,8 +4,8 @@
 - title: bio
   url: /bio
 
-- title: blog
-  url: /blog
+# - title: blog
+#   url: /blog
 
 - title: portfolio
   url: /portfolio

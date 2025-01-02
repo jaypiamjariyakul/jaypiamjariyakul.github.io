@@ -1,6 +1,6 @@
 ---
 title: contacts
-layout: post
+layout: bio
 ---
 
 # contacts

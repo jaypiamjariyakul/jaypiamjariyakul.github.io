@@ -1,6 +1,7 @@
 ---
 title: Work Experience
 layout: cv
+nav_order: 2
 ---
 
 ## Work Experience

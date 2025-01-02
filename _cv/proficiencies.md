@@ -1,6 +1,7 @@
 ---
 title: Proficiencies
 layout: cv
+nav_order: 4
 ---
 
 ## Proficiencies

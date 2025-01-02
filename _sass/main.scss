@@ -145,6 +145,17 @@ div.grid-container-text ul {
   list-style-position: outside;
 }
 
+// Make sure headings in standalone blocks stand out!
+section div.grid-container-text h2,
+section div.grid-container-text h3,
+section div.grid-container-text h4,
+section div.grid-container-text h5 {
+  margin-bottom: 0px;
+}
+section div.grid-container-text h3 {
+  margin-bottom: 0px;
+}
+
 // .profile-pic-container {
 .grid-container-profile {
   display: flex;

@@ -1,6 +1,7 @@
 ---
 title: Technical Skillsets
 layout: cv
+nav_order: 3
 ---
 
 ## Technical Skillsets

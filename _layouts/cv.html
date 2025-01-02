@@ -13,7 +13,9 @@ layout: default
 </div>
 </section>
 
-{% for post in site.cv %}
+<!-- TODO: post.nav_order does not work on GitHub Pages, just using "nav_order" does -->
+{% assign posts = site.cv | sort: "nav_order" %}
+{% for post in posts %}
 <section>
 <div class="grid-container-text">
   {{ post.content }}

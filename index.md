@@ -20,20 +20,21 @@ markdown file, you cannot use markdown syntax within that element's contents.
       <img src="{{ site.url }}/assets/img/profile.jpg" alt="Picture of me in London." class="profile-pic" />
     </div> <!--grid-container-profile-->
     <div class="grid-container-text">
-      <h2>hi, i'm jay.</h2>
+      <h2>Hi, i'm Jay.</h2>
       <p>
-      not an award-winning composer.<br />
-      mediocre web dev (at best).<br />
-      also a computer engineer irl.
-      </P>
-      <p>
-      i heard musicians love lowercase.
+      Thanks for stopping by - I do stuff like:
+      <ul>
+        <li>Composing music</li>
+        <li>Writing poetry</li>
+        <li>Engineering as a day job/career</li>
+        <li>This website (from scratch!)</li>
+      </ul>
       </p>
     </div> <!--grid-container-text-->
   </div>
 </section>
 
-<section>
+<!-- <section>
   <div class="grid-container-text">
     <p>
     Hey, thanks for stopping by! I'm Jay, and I do stuff like:
@@ -45,12 +46,12 @@ markdown file, you cannot use markdown syntax within that element's contents.
       </ul>
     </p>
   </div>
-</section>
+</section> -->
 
 <section>
   <div class="grid-container-text">
     <p>
-    If you'd like to talk to me about any of these, feel free to <a href="{{ site.url }}/contacts">contact me</a>.
+    If you'd like to talk to me about any of these, be it commissioning a new piece or performing my previous pieces, feel free to <a href="{{ site.url }}/contacts">contact me</a> - I'd love to hear from you.
     </p>
   </div>
 </section>
@@ -59,6 +60,14 @@ markdown file, you cannot use markdown syntax within that element's contents.
   <div class="grid-container-text">
     <p>
     If you'd like a (slightly) more serious look into my artistic portfolio or my engineering CV, please see them on their respective pages.
+    </p>
+  </div>
+</section>
+
+<section>
+  <div class="grid-container-text">
+    <p>
+    Please note: website still WIP (work-in-progress), more to come!
     </p>
   </div>
 </section>

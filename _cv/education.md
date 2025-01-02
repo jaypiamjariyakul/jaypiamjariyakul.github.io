@@ -1,6 +1,7 @@
 ---
 title: Education
 layout: cv
+nav_order: 1
 ---
 
 ## Education
