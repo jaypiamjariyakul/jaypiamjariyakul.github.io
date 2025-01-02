@@ -1,6 +1,6 @@
 ---
 title: bio
-layout: bio
+layout: misc
 ---
 
 # bio

@@ -2,7 +2,7 @@
 layout: default
 ---
 
-<section>
+<section class="hide_in_print">
 <div class="grid-container">
   <div class="grid-container-text">
     {{ content }}
@@ -13,6 +13,8 @@ layout: default
 </div>
 </section>
 
+<p class="show_in_print">Generated from {{ site.url }}</p>
+
 <!-- TODO: post.nav_order does not work on GitHub Pages, just using "nav_order" does -->
 {% assign posts = site.cv | sort: "nav_order" %}
 {% for post in posts %}
@@ -22,3 +24,45 @@ layout: default
 </div>
 </section>
 {% endfor %}
+
+<style>
+.show_in_print {
+  display: none !important;
+}
+
+@media print {
+  .show_in_print {
+    display: block !important;
+  }
+  /* All your print styles go here */
+  header p,
+  .hide_in_print,
+  footer,
+  nav {
+    display: none !important;
+  }
+  header {
+    border-bottom: 0px;
+    margin: 0px;
+    padding: 0px;
+  }
+  section, div.container {
+    padding: 0px;
+    margin: 0px;
+  }
+  section div.grid-container-text {
+    padding: 0px;
+    margin: 0px;
+  }
+  /* Do NOT show the "Go to UP" button! */
+  div.menu-icon {
+    display: none !important;
+  }
+  h1, h2, h3, h4, h5 {
+    font-size: small;
+  }
+  p, li {
+    font-size: small;
+  }
+}
+</style>
