@@ -7,6 +7,7 @@ nav_order: 4
 ## Proficiencies
 
 ### Problem Solving & Creativity
+
 - Used an OOP-based approach (with SystemVerilog class handles) to verify a novel message-collating sub-component in the next generation of GIC. Despite initial pushbacks and risk of confusion, this method uses the full extent of SystemVerilog’s OOP capabilities not previously seen in GIC’s past projects, and allowed for cleaner and more accurate verification of the block, especially when architectural compliance must be upheld.
 - Developed a methodology for collecting coverage data from functional verification & image quality metrics given top-level specifications with Python & SV as part of my Arm internship and graduate schemes, and designed database methods for storing & querying the collected information.
 - Using a new in-house machine learning framework, prototyped a novel method of reducing number of regressions required to achieve the same percentage of functional coverage.
