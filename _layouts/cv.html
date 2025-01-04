@@ -15,12 +15,12 @@ layout: default
 
 <section class="show_in_print" style="text-align: center;">
   <!-- display: inline-block; -->
-    <h1 style="float: left">
-      {{ site.title }}
-    </h1>
-    <p style="float: right;">
-      Generated from {{ page.url | prepend: site.baseurl | prepend: site.url }}
-    </p>
+  <h1 style="float: left">
+    {{ site.title }}
+  </h1>
+  <p style="float: right;">
+    Generated from {{ page.url | prepend: site.baseurl | prepend: site.url }}
+  </p>
 </section>
 
 <!-- TODO: post.nav_order does not work on GitHub Pages, just using "nav_order" does -->
@@ -33,6 +33,7 @@ layout: default
 </section>
 {% endfor %}
 
+<!-- Bespoke stylings for print ONLY -->
 <style>
 .show_in_print {
   display: none !important;
