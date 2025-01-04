@@ -13,7 +13,15 @@ layout: default
 </div>
 </section>
 
-<p class="show_in_print">Generated from {{ site.url }}</p>
+<section class="show_in_print" style="text-align: center;">
+  <!-- display: inline-block; -->
+    <h1 style="float: left">
+      {{ site.title }}
+    </h1>
+    <p style="float: right;">
+      Generated from {{ page.url | prepend: site.baseurl | prepend: site.url }}
+    </p>
+</section>
 
 <!-- TODO: post.nav_order does not work on GitHub Pages, just using "nav_order" does -->
 {% assign posts = site.cv | sort: "nav_order" %}
@@ -35,7 +43,7 @@ layout: default
     display: block !important;
   }
   /* All your print styles go here */
-  header p,
+  header, /* p, */
   .hide_in_print,
   footer,
   nav {
@@ -60,9 +68,14 @@ layout: default
   }
   h1, h2, h3, h4, h5 {
     font-size: small;
+    color: black;
   }
   p, li {
     font-size: small;
+    color: black;
+  }
+  .go-top-btn {
+    display: none !important;
   }
 }
 </style>
