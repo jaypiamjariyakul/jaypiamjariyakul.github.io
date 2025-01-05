@@ -45,15 +45,12 @@ layout: default
   }
   /* All your print styles go here */
   header, /* p, */
+  /* Do NOT show the "Go to UP" button! */
   .hide_in_print,
   footer,
-  nav {
+  nav,
+  .nav-button {
     display: none !important;
-  }
-  header {
-    border-bottom: 0px;
-    margin: 0px;
-    padding: 0px;
   }
   section, div.container {
     padding: 0px;
@@ -62,10 +59,6 @@ layout: default
   section div.grid-container-text {
     padding: 0px;
     margin: 0px;
-  }
-  /* Do NOT show the "Go to UP" button! */
-  div.menu-icon {
-    display: none !important;
   }
   h1, h2, h3, h4, h5 {
     font-size: small;

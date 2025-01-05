@@ -15,18 +15,18 @@ layout: default
 <!-- ---------------------------------------- -->
 {% assign portfolio_choral = site.portfolio | where_exp: "item" , "item.path contains 'choral'" %}
 {% assign posts_choral = portfolio_choral | sort: "date" | reverse %}
-{% include_relative assets/includes/portfolio_topic.html title="Choral" posts_include=posts_choral %}
+{% include portfolio_topic.html title="Choral" posts_include=posts_choral %}
 
 <!-- ---------------------------------------- -->
 <!-- Orchestral -->
 <!-- ---------------------------------------- -->
 {% assign portfolio_orchestral = site.portfolio | where_exp: "item" , "item.path contains 'orchestral'" %}
 {% assign posts_orchestral = portfolio_orchestral | sort: "date" | reverse %}
-{% include_relative assets/includes/portfolio_topic.html title="Orchestral" posts_include=posts_orchestral %}
+{% include portfolio_topic.html title="Orchestral" posts_include=posts_orchestral %}
 
 <!-- ---------------------------------------- -->
 <!-- Poetry -->
 <!-- ---------------------------------------- -->
 {% assign portfolio_poetry = site.portfolio | where_exp: "item" , "item.path contains 'poetry'" %}
 {% assign posts_poetry = portfolio_poetry | sort: "date" | reverse %}
-{% include_relative assets/includes/portfolio_topic.html title="Poetry" posts_include=posts_poetry %}
+{% include portfolio_topic.html title="Poetry" posts_include=posts_poetry %}

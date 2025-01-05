@@ -1,6 +1,6 @@
 
 var lastScrollTop = 0;
-const navbar = document.querySelector('nav');
+const navbar = document.querySelector('header');
 
 // Make navbar sticky and hide it when scrolling down, while showing it again when scrolling up.
 // Navbar will always be visible at the top of the page and will reappear as soon as the user starts scrolling up.

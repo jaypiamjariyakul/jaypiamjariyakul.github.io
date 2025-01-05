@@ -27,10 +27,10 @@ markdown file, you cannot use markdown syntax within that element's contents.
       All views are my own & do not reflect my employer's.
       </p>
       <p>
-      Outside of my engineering career, I also sing as a volunteer lay clerk at Magdalene College Chapel Choir in Cambridge.
+      Outside of my engineering career, I also sing as a volunteer lay clerk at Magdalene College Chapel Choir in Cambridge, in addition to composing music for choirs, orchestras, and multimedia.
       </p>
       <p>
-      As a composer, my pieces have been performed in the UK including Magdalene College Chapel Choir, Caelestis, and Queens' Chamber Choir.
+      As a composer, my pieces have been performed by ensembles across the UK including Magdalene College Chapel Choir, Caelestis, Bristol University Music Society, and Queens' Chamber Choir.
       </p>
       <hr />
       <blockquote>

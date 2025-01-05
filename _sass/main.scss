@@ -58,55 +58,19 @@ body {
   max-width: var(--max-vw);
 }
 
-header {
-  background: var(--color-primary);
-  color: var(--color-text-primary);
-  padding-top: 20px;
-  min-height: 70px;
-  border-bottom: var(--color-highlight) 0px solid;
-  // border-bottom: var(--color-highlight) 0.5rem solid;
-  // padding: 20px;
-}
-
 p {
   text-align: justify;
 }
 
-header h1, header p {
-  // margin: 10px 0px 0px 0px;
-  margin: 10px;
-  text-align: center;
-}
+// header h1, header p {
+//   // margin: 10px 0px 0px 0px;
+//   margin: 10px;
+//   text-align: center;
+// }
 
 footer p {
   text-align: center;
 }
-
-nav {
-  padding: 0px;
-  background: var(--color-primary);
-  color: var(--color-text-primary);
-  position: sticky;
-  top: 0;
-  transition: transform 0.3s ease-in-out;
-  z-index: 1000;
-}
-nav.hide {
-  transform: translateY(-100%);
-}
-
-nav ul {
-  margin: 0;
-  padding: 10px;
-  list-style: none;
-  text-align: center;
-}
-
-nav li {
-  display: inline;
-  margin: 0 20px;
-}
-
 
 a {
   color: var(--color-text-primary);
@@ -129,10 +93,86 @@ h1 a {
   text-decoration: none;
 }
 
-nav a {
+// ================================================
+// Header properties
+// ================================================
+header {
+  background: var(--color-primary);
+  color: var(--color-text-primary);
+
+  padding-top: 20px;
+  padding: 20px;
+  min-height: 70px;
+
+  position: sticky;
+  top: 0;
+  transition: transform 0.2s ease-in-out;
+  z-index: 1000;
+
+  border-bottom: var(--color-highlight) 0px solid;
+  // border-bottom: var(--color-highlight) 0.5rem solid;
+  display: flex;
+  // resize: horizontal;
+  align-items: center;
+}
+header.hide {
+  transform: translateY(-100%);
+}
+// header nav ul {
+//   display: block;
+//   margin: 0;
+//   padding: 10px;
+//   list-style: none;
+//   text-align: right;
+// }
+// header nav ul li {
+//   display: inline;
+//   margin: 0 20px;
+// }
+/* header nav div.nav-button {
+  display: flex;
+  flex: auto;
+} */
+header div.nav-title h1 {
+  // float: left;
+  margin: 10px;
+  text-align: left;
+  flex: auto;
+}
+header div.nav-title button.nav-button {
+  display: none;
+  // cursor: pointer;
+  font-size: 24px;
+  padding: 10px;
+  color: var(--color-text-primary);
+  flex: auto;
+}
+header nav {
+  position: fixed;
+  right: 0px;
+  padding: 20px;
+}
+header nav ul#menu {
+  margin: 0;
+  padding: 0;
+  // overflow: hidden;
   font-size: 18px;
-  text-decoration: none;
+  flex: auto;
+  display: inline-flex;
+}
+header nav ul#menu li {
+  list-style: none;
+  // float: right;
+  flex: auto;
+}
+header nav ul#menu li a {
+  font-size: 18px;
+  text-align: center;
   font-weight: bold;
+  text-decoration: none;
+  padding: 12px 16px;
+  padding: 10px 0px;
+  padding: 0px 20px;
 }
 
 // section {
@@ -218,14 +258,6 @@ section div.grid-container-text h3 {
   background: var(--color-secondary);
   /* padding: 20px; */
   border-radius: 5px;
-}
-
-.menu-icon {
-  display: none;
-  cursor: pointer;
-  font-size: 24px;
-  padding: 10px;
-  color: var(--color-text-primary);
 }
 
 footer {
@@ -336,22 +368,50 @@ button:hover {
     aspect-ratio: 1;
   }
 
-  .menu-icon {
+  // ------------------------------------------------
+  // Mobile heading MUST be "display: block"
+  // ------------------------------------------------
+  header {
     display: block;
   }
-
-  nav ul {
+  // Flex box does not properly render contents - reset all "flex" tags in header.
+  // If flex needed below, override accordingly.
+  header * {
+    flex: none;
+  }
+  header div.nav-title {
+    display: inline-flex;
+    width: 100%;
+    align-items: center;
+  }
+  header div.nav-title button.nav-button {
+    display: block;
+    right: 0px;
+    flex: inherit;
+  }
+  header nav {
+    position: unset;
+    padding: 0px;
+  }
+  header nav ul#menu {
     display: none;
+    float: none;
+    margin: 10px 10px;
   }
-
-  nav ul.show {
+  // Overrides "header nav ul" above - show when burger clicked.
+  header nav ul#menu.show {
     display: block;
   }
-
-  nav li {
+  // If parent "ul#menu" shows, "a" is always a block text.
+  header nav ul#menu li {
     display: block;
-    margin: 10px 0;
+    padding: 10px 10px;
   }
+
+  // header nav ul#menu {
+  //   float: none;
+  //   margin: 10px 10px;
+  // }
 
   iframe {
     max-width: 100% !important;
