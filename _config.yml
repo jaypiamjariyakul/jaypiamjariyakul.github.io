@@ -1,7 +1,7 @@
 title: Jay Piamjariyakul
 website: https://jaypiamjariyakul.github.io
 baseurl: ""
-url: ""
+url: "https://jaypiamjariyakul.github.io"
 
 # NOTE: to render new collections, kill the old session & run "bundle exec jekyll serve --force_polling"
 collections:
