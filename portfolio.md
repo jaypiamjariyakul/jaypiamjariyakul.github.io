@@ -1,11 +1,10 @@
 ---
-title: portfolio
+title: Portfolio
 layout: portfolio
 ---
 
-# portfolio
+# Portfolio
 
-aka my artistic CV  \
-This is where I post my compositions in (hopefully) the order that they were completed in.
+Please see [here]({{ site.url }}/cv) for my engineering CV.
 
-If you'd like to see my engineering CV, please see [here]({{ site.url }}/cv).
+If you are interested in performing any of these pieces, please [get in touch]({{ site.url }}/contacts).

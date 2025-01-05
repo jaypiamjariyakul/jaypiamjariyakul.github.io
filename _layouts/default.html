@@ -10,7 +10,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <!-- <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet"> -->
     <!-- <link href="https://fonts.googleapis.com/css2?family=Comic+Neue&display=swap" rel="stylesheet"> -->
-    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet"> -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <!-- <link rel="stylesheet" href="{{ site.baseurl }}/assets/styles.css"> -->
     <link rel="stylesheet" href="{{ site.url }}/assets/css/styles.css">
     <link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Your awesome title" />
@@ -21,10 +22,10 @@
       <div class="container">
         <h1>
           <a href="{{ site.url }}/">
-            jay piamjariyakul
+            Jay Piamjariyakul
           </a>
         </h1>
-        <p><a href="{{ site.url }}/todo" style="text-decoration: none; font-weight: normal;">engineer</a> - composer - singer - poet</p>
+        <!-- <p>engineer - composer - singer - poet</p> -->
       </div>
     </header>
 
@@ -53,7 +54,7 @@
     <footer>
       <div class="container">
         <p>
-          &copy; 2024 Jay Piamjariyakul.<br />
+          &copy; {{ 'now' | date: "%Y" }} Jay Piamjariyakul.<br />
           Built with <a href="https://jekyllrb.com/">Jekyll</a> - source code available on <a href="https://github.com/jaypiamjariyakul/jaypiamjariyakul.github.io">GitHub</a>.
         </p>
       </div>

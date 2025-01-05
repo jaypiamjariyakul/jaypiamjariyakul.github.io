@@ -1,32 +1,51 @@
 // :root {
-//     --primary-dark: #0a192f;
-//     --secondary-dark: #172a45;
-//     --highlight: #64ffda;
-//     --text-primary: #ccd6f6;
-//     --text-secondary: #8892b0;
+//     --color-primary: #0a192f;
+//     --color-secondary: #172a45;
+//     --color-highlight: #64ffda;
+//     --color-text-primary: #ccd6f6;
+//     --color-text-secondary: #8892b0;
 // }
 
 :root {
-  // --primary-dark: #061120;
-  // --secondary-dark: #0e1d33;
+  // --color-primary: #061120;
+  // --color-secondary: #0e1d33;
 
-  --primary-dark: #030b16;
-  --secondary-dark: #081425;
-  --highlight: #64ffda;
-  --text-primary: #ccd6f6;
-  --text-secondary: #8892b0;
-  --max-vw: 1280px;
+  --max-vw: 1800px; //1280px;
+
+  //--------------------------------
+  // Dark
+  //--------------------------------
+  --color-primary: #030b16;
+  --color-secondary: #081425;
+  --color-highlight: #64ffda;
+  --color-text-primary: #ccd6f6;
+  --color-text-secondary: #8892b0;
+
+  //--------------------------------
+  // Light
+  //--------------------------------
+  --color-text-primary: #030b16;
+  --color-text-secondary: #081425;
+  --color-highlight: #143f7c;
+  --color-primary: #ffffff;
+  --color-secondary: #f8f8f8;
+  // --color-secondary: #ffffff;
+}
+
+html {
+  font-size: 18px; // change to whatever
 }
 
 body {
   // font-family: "Roboto Mono", monospace;
-  font-family: "Libre Baskerville", serif;
   // font-family: "Comic Neue", cursive;
+  // font-family: "Libre Baskerville", serif;
+  font-family: "Noto Sans", serif;
   line-height: 1.6;
   margin: 0;
   padding: 0;
-  background-color: var(--primary-dark);
-  color: var(--text-primary);
+  background-color: var(--color-primary);
+  color: var(--color-text-primary);
 }
 
 .container {
@@ -40,12 +59,16 @@ body {
 }
 
 header {
-  background: var(--primary-dark);
-  color: var(--text-primary);
+  background: var(--color-primary);
+  color: var(--color-text-primary);
   padding-top: 20px;
   min-height: 70px;
-  border-bottom: var(--highlight) 0.5rem solid;
+  border-bottom: var(--color-highlight) 0.5rem solid;
   // padding: 20px;
+}
+
+p {
+  text-align: justify;
 }
 
 header h1, header p {
@@ -54,10 +77,14 @@ header h1, header p {
   text-align: center;
 }
 
+footer p {
+  text-align: center;
+}
+
 nav {
   padding: 0px;
-  background: var(--primary-dark);
-  color: var(--text-primary);
+  background: var(--color-primary);
+  color: var(--color-text-primary);
   position: sticky;
   top: 0;
   transition: transform 0.3s ease-in-out;
@@ -81,14 +108,18 @@ nav li {
 
 
 a {
-  color: var(--text-primary);
+  color: var(--color-text-primary);
   text-decoration-line: underline;
   font-weight: normal;
 }
 
-a:hover {
-  color: var(--highlight);
+.portfolio-topic h3 a {
   font-weight: bold;
+}
+
+a:hover {
+  color: var(--color-highlight);
+  // font-weight: bold;
   text-decoration-line: underline;
 }
 
@@ -106,7 +137,7 @@ nav a {
 // section {
 //     padding: 20px 20px;
 //     margin: 20px 20px 20px 20px;
-//     background: var(--secondary-dark);
+//     background: var(--color-secondary);
 //     border-radius: 5px;
 // }
 section {
@@ -135,9 +166,9 @@ section {
 }
 
 .grid-container-text {
-  background-color: var(--secondary-dark);
-  background: var(--secondary-dark);
-  padding: 20px;
+  background-color: var(--color-secondary);
+  background: var(--color-secondary);
+  padding: 20px 30px;
 }
 
 div.grid-container-text ul {
@@ -145,6 +176,7 @@ div.grid-container-text ul {
   list-style-position: outside;
 }
 
+/*
 // Make sure headings in standalone blocks stand out!
 section div.grid-container-text h2,
 section div.grid-container-text h3,
@@ -155,6 +187,7 @@ section div.grid-container-text h5 {
 section div.grid-container-text h3 {
   margin-bottom: 0px;
 }
+*/
 
 // .profile-pic-container {
 .grid-container-profile {
@@ -174,14 +207,14 @@ section div.grid-container-text h3 {
   // border-radius: 20%;
   // Enforce square aspect ratio regardless of size.
   // aspect-ratio: 1;
-  // border: 3px solid var(--highlight);
+  // border: 3px solid var(--color-highlight);
   // object-fit: cover;
   object-position: 50% 0;
   object-fit: cover;
 }
 
 .bio {
-  background: var(--secondary-dark);
+  background: var(--color-secondary);
   /* padding: 20px; */
   border-radius: 5px;
 }
@@ -191,12 +224,12 @@ section div.grid-container-text h3 {
   cursor: pointer;
   font-size: 24px;
   padding: 10px;
-  color: var(--highlight);
+  color: var(--color-highlight);
 }
 
 footer {
-  background: var(--secondary-dark);
-  color: var(--text-secondary);
+  background: var(--color-secondary);
+  color: var(--color-text-secondary);
   text-align: center;
   padding: 20px 0;
   margin-top: 20px;
@@ -204,8 +237,8 @@ footer {
 
 button {
   background-color: transparent;
-  color: var(--highlight);
-  border: 1px solid var(--highlight);
+  color: var(--color-highlight);
+  border: 1px solid var(--color-highlight);
   padding: 10px 20px;
   border-radius: 5px;
   cursor: pointer;
@@ -221,8 +254,8 @@ button:hover {
     position: fixed;
     bottom: 20px;
     right: 20px;
-    background-color: var(--highlight);
-    color: var(--primary-dark);
+    background-color: var(--color-highlight);
+    color: var(--color-primary);
     border: none;
     border-radius: 50%;
     width: 50px;
@@ -244,8 +277,8 @@ button:hover {
   text-decoration: none;
   padding: 10px;
   font-family: sans-serif;
-  color: var(--primary-dark);
-  background: var(--highlight);
+  color: var(--color-primary);
+  background: var(--color-highlight);
   border-radius: 100px;
   transition: opacity 0.3s, visibility 0.3s;
   display: none;
@@ -266,8 +299,8 @@ button:hover {
   /* visual styling */
   width:45px;
   aspect-ratio:1;
-  color: var(--primary-dark);
-  background: var(--highlight);
+  color: var(--color-primary);
+  background: var(--color-highlight);
   border-radius:10px;
   transition: opacity 0.3s, visibility 0.3s;
   }
@@ -276,17 +309,21 @@ button:hover {
   position:absolute;
   inset:30%;
   transform:translateY(20%) rotate(-45deg);
-  border-top:5px solid var(--primary-dark);
-  border-right:5px solid var(--primary-dark);
+  border-top:5px solid var(--color-primary);
+  border-right:5px solid var(--color-primary);
   }
   .go-top-btn:hover {
     background-color: rgba(100, 255, 218, 0.8);
   }
 
 @media screen and (max-width: 768px) {
+  html {
+    font-size: 14px; // change to whatever
+  }
+
   .grid-container {
     grid-template-columns: 1fr;
-    gap: 0px;
+    gap: 20px;
   }
 
   .profile-pic {
@@ -314,6 +351,16 @@ button:hover {
     display: block;
     margin: 10px 0;
   }
+
+  iframe {
+    max-width: 100% !important;
+    width: auto !important;
+    height: auto !important;
+  }
+
+  .grid-container-text {
+    padding: 20px;
+  }
 }
 
 @keyframes fadeInUp {
@@ -332,9 +379,9 @@ button:hover {
   to { opacity: 1; }
 }
 /* .fade-in { */
-body {
-  animation: fadeIn 1s ease-in;
-}
+// body {
+//   animation: fadeIn 0.5s ease-in;
+// }
 @keyframes fadeOut {
   from { opacity: 1; }
   to { opacity: 0; }
@@ -345,3 +392,27 @@ body {
 // }
 // -webkit-animation: myAnimation 0.9s linear 0.4s forwards;
 
+/*
+@property --wipe-position {
+  syntax: "<percentage>";
+  inherits: false;
+  initial-value: 100%;
+}
+
+.wipe {
+  --wipe-position: 100%;
+  --gradient-length: 0%;
+  mask: linear-gradient(
+    to bottom,
+    red var(--wipe-position),
+    transparent calc(var(--wipe-position)),
+    transparent
+  );
+
+  transition: --wipe-position 250ms ease-in;
+}
+
+.wipe:hover {
+  --wipe-position: calc(-1 * var(--gradient-length));
+}
+*/

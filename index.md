@@ -20,8 +20,27 @@ markdown file, you cannot use markdown syntax within that element's contents.
       <img src="{{ site.url }}/assets/img/profile.jpg" alt="Picture of me in London." class="profile-pic" />
     </div> <!--grid-container-profile-->
     <div class="grid-container-text">
-      <h2>Hi, i'm Jay.</h2>
+      <h2>Hi, I'm Jay.</h2>
+      <h3>I am an <a href="{{ site.url }}/todo" style="text-decoration: none; font-weight: bold;">engineer</a>, composer, singer, and poet.</h3>
       <p>
+      I am a Verification Engineer currently working on the Generic Interrupt Controller (GIC) at <a href="https://arm.com/">Arm</a>.<br />
+      All views are my own & do not reflect my employer's.
+      </p>
+      <p>
+      Outside of my engineering career, I also sing as a volunteer lay clerk at Magdalene College Chapel Choir in Cambridge.
+      </p>
+      <p>
+      As a composer, my pieces have been performed in the UK including Magdalene College Chapel Choir, Caelestis, and Queens' Chamber Choir.
+      </p>
+      <hr />
+      <blockquote>
+        <i>"... an excellent setting of the words full of colour..."</i>
+      </blockquote>
+      <hr />
+      <p>
+      <a href="{{ site.url }}/contacts">Get in touch</a> for any queries on commissions or performing pieces from my <a href="{{ site.url }}/portfolio">catalog</a>.
+      </p>
+      <!-- <p>
       Thanks for stopping by - I do stuff like:
       <ul>
         <li>Composing music</li>
@@ -29,7 +48,7 @@ markdown file, you cannot use markdown syntax within that element's contents.
         <li>Engineering as a day job/career</li>
         <li>This website (from scratch!)</li>
       </ul>
-      </p>
+      </p> -->
     </div> <!--grid-container-text-->
   </div>
 </section>
@@ -47,22 +66,6 @@ markdown file, you cannot use markdown syntax within that element's contents.
     </p>
   </div>
 </section> -->
-
-<section>
-  <div class="grid-container-text">
-    <p>
-    If you'd like to talk to me about any of these, be it commissioning a new piece or performing my previous pieces, feel free to <a href="{{ site.url }}/contacts">contact me</a> - I'd love to hear from you.
-    </p>
-  </div>
-</section>
-
-<section>
-  <div class="grid-container-text">
-    <p>
-    If you'd like a (slightly) more serious look into my artistic portfolio or my engineering CV, please see them on their respective pages.
-    </p>
-  </div>
-</section>
 
 <section>
   <div class="grid-container-text">

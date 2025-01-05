@@ -43,7 +43,7 @@ $("section").each(function(i_sel){
     // TODO: share SCSS vars with JS?
   }
 
-  var base_duration = 1;
+  var base_duration = 0.5;
   var speed_knob = 4;
   // var delay_calc = base_duration + (i_sel / speed_knob);
   var delay_calc = (i_sel / speed_knob);
