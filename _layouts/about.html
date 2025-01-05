@@ -2,4 +2,13 @@
 layout: default
 ---
 
-{{ content }}
+<section style="scroll-snap-align: start;">
+  <div class="grid-container">
+    <div class="grid-container-profile">
+      <img src="{{ site.url }}/assets/img/profile.jpg" alt="Picture of me in London." class="profile-pic" />
+    </div> <!--grid-container-profile-->
+    <div class="grid-container-text">
+      {{ content }}
+    </div> <!--grid-container-text-->
+  </div>
+</section>

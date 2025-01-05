@@ -1,19 +1,50 @@
 
 var lastScrollTop = 0;
 const navbar = document.querySelector('header');
+const nav_menu = navbar.querySelector('ul#menu');
 
-// Make navbar sticky and hide it when scrolling down, while showing it again when scrolling up.
-// Navbar will always be visible at the top of the page and will reappear as soon as the user starts scrolling up.
+
+//=================================================
+// Sticky navbar
+//=================================================
+// Make navbar sticky & hide it when scrolling down - shows it again when scrolling up.
+// Navbar will always be visible at top of page - reappears when user starts scrolling up.
 document.addEventListener('scroll', function() {
-    var scrollTop = window.scrollY || document.documentElement.scrollTop;
-    if (scrollTop > lastScrollTop) {
-        // Scrolling down
-        navbar.classList.add('hide');
-        // navbar.style.top='-80px';
-    } else {
-        // Scrolling up
-        navbar.classList.remove('hide');
-        // navbar.style.top='0';
-    }
-    lastScrollTop = scrollTop;
+  var scrollTop = document.documentElement.scrollTop;
+  var is_menu_shown = nav_menu.classList.contains('show');
+
+  // Only hide iff menu is NOT showing!
+  // NOTE: always visible in desktop view
+  if ((scrollTop > lastScrollTop) && !is_menu_shown) {
+    // Scrolling down
+    navbar.classList.add('hide');
+    // navbar.style.top='-80px';
+  } else {
+    // Scrolling up
+    navbar.classList.remove('hide');
+    // navbar.style.top='0';
+  }
+  lastScrollTop = scrollTop;
 });
+
+// document.addEventListener("DOMContentLoaded", function() {
+//   function is_nav_link_active(event) {
+//     const href_target = event.target.getAttribute('href');
+//     console.log("href_target = " + href_target);
+//     const href_this = this.href;
+//     console.log("href_this = " + href_this);
+
+//     if (href_this in href_target) {
+//       event.target.classList.add('active');
+//       console.log("Page " + href_target + " is now active");
+//     } else {
+//       event.target.classList.remove('active');
+//     }
+//   }
+
+//   // Add event listeners to all navbar links.
+//   const navLinks = document.querySelectorAll('nav ul#menu li a');
+//   navLinks.forEach(link => {
+//       link.addEventListener('click', is_nav_link_active);
+//   });
+// });

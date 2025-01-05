@@ -33,6 +33,8 @@ document.addEventListener("DOMContentLoaded", function() {
     //     }, 10);
     // }, 100);
 
+
+    /*
     // Function: scrollToSection
     // When clicked, scrolls to section specified in nav's links.
     function scrollToSection(event) {
@@ -59,16 +61,18 @@ document.addEventListener("DOMContentLoaded", function() {
                 }, 1000);
             }, 500);
         }
-    }
+    } */
+
+
     // 1. Adds a 'fade-out' class to the body when a nav link is clicked.
     // 2. Scrolls to the target section after a short delay (to allow the fade-out animation to complete).
     // 3. Removes the 'fade-out' class and adds a 'fade-in' class to fade the content back in.
     // 4. Finally, removes the 'fade-in' class after the animation completes.
 
-    // Add event listeners to all navbar links.
-    const navLinks = document.querySelectorAll('nav a.section');
-    navLinks.forEach(link => {
-        // When clicked, calls "scrollToSection()".
-        link.addEventListener('click', scrollToSection);
-    });
+    // // Add event listeners to all navbar links.
+    // const navLinks = document.querySelectorAll('nav a.section');
+    // navLinks.forEach(link => {
+    //     // When clicked, calls "scrollToSection()".
+    //     link.addEventListener('click', scrollToSection());
+    // });
 });
