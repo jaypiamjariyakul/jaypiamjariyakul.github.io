@@ -317,9 +317,9 @@ button:hover {
   }
 
 @media screen and (max-width: 768px) {
-  html {
-    font-size: 14px; // change to whatever
-  }
+  // html {
+  //   font-size: 14px; // change to whatever
+  // }
 
   .grid-container {
     grid-template-columns: 1fr;
