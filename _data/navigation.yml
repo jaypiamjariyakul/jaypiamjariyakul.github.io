@@ -1,6 +1,9 @@
 # - title: blog
 #   url: /blog
 
+- title: About
+  url: /
+
 - title: Portfolio
   url: /portfolio
 
@@ -9,6 +12,3 @@
 
 - title: Contacts
   url: /contacts
-
-- title: About
-  url: /
