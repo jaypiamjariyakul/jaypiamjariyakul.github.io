@@ -54,5 +54,5 @@ $("section").each(function(i_sel){
     'animation-delay' : delay_calc + 's'
   });
   // TODO: make scroll sticky iff botom of section is in view?
-  console.log("transition-delay for index" + i_sel + ": " + delay_calc);
+  // console.log("transition-delay for index" + i_sel + ": " + delay_calc);
 });
