@@ -63,7 +63,8 @@ header {
   color: var(--color-text-primary);
   padding-top: 20px;
   min-height: 70px;
-  border-bottom: var(--color-highlight) 0.5rem solid;
+  border-bottom: var(--color-highlight) 0px solid;
+  // border-bottom: var(--color-highlight) 0.5rem solid;
   // padding: 20px;
 }
 
@@ -224,7 +225,7 @@ section div.grid-container-text h3 {
   cursor: pointer;
   font-size: 24px;
   padding: 10px;
-  color: var(--color-highlight);
+  color: var(--color-text-primary);
 }
 
 footer {
