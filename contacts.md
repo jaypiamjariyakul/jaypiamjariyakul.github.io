@@ -8,7 +8,7 @@ permalink: /contacts
 
 ## Music
 
-If you are interested in performing any of my music, please send me an email [here](mailto:jay.piamjariyakul@outlook.com).
+If you are interested in performing any of my music, or commissioning new ones, please send me an email [here](mailto:jay.piamjariyakul@outlook.com).
 
 You can also find me on [Instagram](https://www.instagram.com/j.pmjl.music/) or [FB](https://www.facebook.com/j.pmjl.music).
 

@@ -13,6 +13,12 @@ document.addEventListener('scroll', function() {
   var scrollTop = document.documentElement.scrollTop;
   var is_menu_shown = nav_menu.classList.contains('show');
 
+  // // If screen size is non-mobile, disable force-showing of nav-menu.
+  // if ((screen.width > 850)){ // && nav_menu.classList.contains('show')) {
+  //   console.log("screen.width = " + screen.width);
+  // }
+  // navbar.classList.remove('show');
+
   // Only hide iff menu is NOT showing!
   // NOTE: always visible in desktop view
   if ((scrollTop > lastScrollTop) && !is_menu_shown) {
