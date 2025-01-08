@@ -30,6 +30,13 @@ Please **clearly** state reproducible steps, browser type/version, device, notes
     - Navbar doesn't hide!
   - Notes:
     - Edge case?
+- [ ] Generating a portfolio item's card bug: if truncated text has hyperlink, rendering cards on "Portfolio" causes the subsequent item's HREF value to be misinterpreted
+  - Reproducible steps:
+    - Add hyperlink to near start of any portfolio card
+    - Re-render
+    - See messed-up render & its HTML output!
+  - Notes:
+    - Workaround is remove hyperlink (if possible) or move it to the end - enough?
 
 ***
 
