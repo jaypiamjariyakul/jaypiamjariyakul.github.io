@@ -41,9 +41,9 @@
       <p style="font-size: smaller;">
         Completed {{ post.date | date: "%b %-d, %Y" }}
       </p>
-      <p>
-        {{ post.content | truncatewords: 21 | strip_newline | truncate: 100 }}
-      </p>
+      <!-- <p>
+        {{ post.exerpt }}
+      </p> -->
     </div>
   </a>
   {% endfor %}
