@@ -37,6 +37,8 @@ Please **clearly** state reproducible steps, browser type/version, device, notes
     - See messed-up render & its HTML output!
   - Notes:
     - Workaround is remove hyperlink (if possible) or move it to the end - enough?
+    - Workaround as of 250108: remove post contents in cards!
+    - If we want previews, we MUST convert all hyperlinks to paragraph text...
 
 ***
 
