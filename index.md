@@ -21,7 +21,7 @@ As a composer, I write music for choirs, orchestras, and multimedia. My pieces h
 
 > _"... an excellent setting of the words full of colour..."_
 
-> _"... stunning, creative... \[his\] luscious harmonic style will make his piece memorable..."_
+> _"... stunning, creative... Jay's luscious harmonic style will make his piece memorable..."_
 
 ***
 
