@@ -49,6 +49,7 @@ Please **clearly** state reproducible steps, browser type/version, device, notes
 - [ ] How to specify section breaks in MD? Can it convert to breaks in HTML? (ideally without parser, or minimally)
 - [ ] Restructure Portfolio - separate pages for Choral vs Poetry vs etc?
 - [ ] Generate a new burger button - SVG or pure CSS?
+- [ ] Spin-off Poetry into its own page in header
 
 ***
 

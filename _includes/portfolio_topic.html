@@ -23,29 +23,11 @@
 </div>
 </section> -->
 
-{% assign posts = include.posts_include %}
+<!-- {% assign posts = include.posts_include %} -->
 
 <section>
   <div class="grid-container-text">
     <h2>{{ include.title }}</h2>
   </div>
 </section>
-<section>
-<div class="grid-container">
-  {% for post in posts %}
-  <a href="{{ post.url }}" style="text-decoration: none;">
-    <div class="grid-container-text portfolio-topic">
-      <h3 style="text-decoration: underline;">
-        {{ post.title}}
-      </h3>
-      <p style="font-size: smaller;">
-        Completed {{ post.date | date: "%b %-d, %Y" }}
-      </p>
-      <!-- <p>
-        {{ post.exerpt }}
-      </p> -->
-    </div>
-  </a>
-  {% endfor %}
-</div>
-</section>
+{% include portfolio_itemize.html posts=include.posts_include %}

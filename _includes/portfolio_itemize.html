@@ -1,0 +1,22 @@
+
+<!-- Gives option for portfolio entries to be listed without header. -->
+<!-- If you'd like to bundle it with headers, use portfolio_topic -->
+<section>
+  <div class="grid-container">
+    {% for post in posts %}
+    <a href="{{ post.url }}" style="text-decoration: none;">
+      <div class="grid-container-text portfolio-topic">
+        <h3 style="text-decoration: underline;">
+          {{ post.title}}
+        </h3>
+        <p style="font-size: smaller;">
+          Completed {{ post.date | date: "%b %-d, %Y" }}
+        </p>
+        <!-- <p>
+          {{ post.exerpt }}
+        </p> -->
+      </div>
+    </a>
+    {% endfor %}
+  </div>
+</section>

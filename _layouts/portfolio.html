@@ -25,6 +25,13 @@ layout: default
 {% include portfolio_topic.html title="Orchestral" posts_include=posts_orchestral %}
 
 <!-- ---------------------------------------- -->
+<!-- Media Scoring -->
+<!-- ---------------------------------------- -->
+{% assign portfolio_media = site.portfolio | where_exp: "item" , "item.path contains 'media'" %}
+{% assign posts_media = portfolio_media | sort: "date" | reverse %}
+{% include portfolio_topic.html title="Media Scoring" posts_include=posts_media %}
+
+<!-- ---------------------------------------- -->
 <!-- Poetry -->
 <!-- ---------------------------------------- -->
 {% assign portfolio_poetry = site.portfolio | where_exp: "item" , "item.path contains 'poetry'" %}
