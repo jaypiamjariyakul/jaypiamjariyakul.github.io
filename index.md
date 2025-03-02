@@ -17,6 +17,8 @@ Outside of my engineering career, I also sing as a volunteer lay clerk at Magdal
 
 As a composer, I write music for choirs, orchestras, and multimedia. My pieces have been performed by ensembles across the UK including Magdalene College Chapel Choir, Caelestis, Bristol University Music Society, and Queens' Chamber Choir.
 
+My music has been shortlisted for the JAM on the Marsh's Call for Music 2025, and my piece [\"Prevent us, O Lord\"]({{ site.url }}/portfolio/choral/prevent-us-o-lord) won runner-up for the 2024 Hadfield Composition Competition.
+
 ***
 
 > _"... an excellent setting of the words full of colour..."_
