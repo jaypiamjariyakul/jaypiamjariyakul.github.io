@@ -12,7 +12,7 @@ Dedicated to The Rt Rev'd Dr. Rowan Williams, former Master of Magdalene College
 
 ---
 
-Approx. 4-5 minutes.
+Approx. 5 minutes.
 
 If you are interested in performing this piece, please [get in touch]({{ site.url }}/contacts).
 

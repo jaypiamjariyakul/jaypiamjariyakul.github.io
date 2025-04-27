@@ -12,7 +12,7 @@ Text by the composer - see full text [here]({{ site.url }}/portfolio/poetry/pon-
 
 ---
 
-Approx. 5-6 minutes.
+Approx. 6 minutes.
 
 If you are interested in performing this piece, please [get in touch]({{ site.url }}/contacts).
 

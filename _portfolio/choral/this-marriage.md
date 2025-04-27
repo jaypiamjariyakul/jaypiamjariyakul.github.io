@@ -12,7 +12,7 @@ Text by Jalal al-Din Rumi (1207-1273), translation by Kabir Helminski (b. 1947).
 
 ---
 
-Approx. 6-7 minutes.
+Approx. 4 minutes.
 
 If you are interested in performing this piece, please [get in touch]({{ site.url }}/contacts).
 

@@ -15,7 +15,7 @@ First performance by Queens' Chamber Choir, under the direction Joanna Tsang, at
 
 ---
 
-Approx. 5-6 minutes.
+Approx. 5 minutes.
 
 Perusal score available [here]({{ site.url }}/assets/pdf/charm_me_asleep_perusal.pdf).
 

@@ -10,7 +10,7 @@ Text by Emily Pauline Johnson \[Tekahionwake\] (1861 - 1913).
 
 ---
 
-Approx. 4-5 minutes.
+Approx. 4 minutes.
 
 If you are interested in performing this piece, please [get in touch]({{ site.url }}/contacts).
 

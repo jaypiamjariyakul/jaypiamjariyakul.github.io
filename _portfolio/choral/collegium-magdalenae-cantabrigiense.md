@@ -16,7 +16,7 @@ First performance by Magdalene College Chapel Choir, under the direction James P
 
 ---
 
-Approx. 6-7 minutes Magnificat, 3-4 minutes Nunc dimittis.
+Approx. 7 minutes Magnificat, 4 minutes Nunc dimittis.
 
 If you are interested in performing this piece, please [get in touch]({{ site.url }}/contacts).
 

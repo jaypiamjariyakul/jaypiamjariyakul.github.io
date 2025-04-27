@@ -11,9 +11,11 @@ Text by Thomas Cranmer (1489-1556).
 For Jesus College Choir, Cambridge. \
 Runner-up in the [2024 Hadfield Composition Competition](https://www.jesus.cam.ac.uk/articles/winners-2024-jesus-college-hadfield-composition-competition-young-composers-announced).
 
+First performance by Jesus College Chapel Choir, under the direction Benjamin Sheen, at Jesus College Chapel, Cambridge, on March 21, 2025.
+
 ---
 
-Approx. 2-3 minutes.
+Approx. 3 minutes.
 
 This piece is not yet available for performance.
 <!--

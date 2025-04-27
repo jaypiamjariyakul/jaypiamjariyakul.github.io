@@ -10,7 +10,7 @@ Text from the poem "Go, Lovely Rose" by Edmund Waller (1606-1687).
 
 ---
 
-Approx. 5-6 minutes.
+Approx. 6 minutes.
 
 If you are interested in performing this piece, please [get in touch]({{ site.url }}/contacts).
 

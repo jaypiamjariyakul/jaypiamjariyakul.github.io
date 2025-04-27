@@ -10,7 +10,7 @@ Text by anonymous, 10th-century hymn.
 
 ---
 
-Approx. 2-3 minutes.
+Approx. 3 minutes.
 
 If you are interested in performing this piece, please [get in touch]({{ site.url }}/contacts).
 
