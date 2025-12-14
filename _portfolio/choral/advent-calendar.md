@@ -10,6 +10,8 @@ Text by Rowan Williams (b. 1950), used with permission.
 
 Dedicated to The Rt Rev'd Dr. Rowan Williams, former Master of Magdalene College, Cambridge.
 
+Winner of the 2025 Springfield Chamber Chorus Composition Contest, in the category of Original Composition.
+
 ---
 
 Approx. 5 minutes.
